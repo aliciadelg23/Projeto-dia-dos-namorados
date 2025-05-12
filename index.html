@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Tracker - Nosso Amor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Corações animados -->
+    <div class="hearts" style="left: 10%;">❤️</div>
+    <div class="hearts" style="left: 50%; animation-delay: 3s;">💕</div>
+    <div class="hearts" style="left: 80%; animation-delay: 7s;">💖</div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 id="coupleNames">João & Maria</h1>
+            <p>Nosso Amor Especial</p>
+        </div>
+
+        <!-- Contador de dias -->
+        <div class="counter">
+            <h2>Estamos juntos há</h2>
+            <div class="days" id="daysCounter">0</div>
+            <p>dias de pura felicidade!</p>
+        </div>
+
+        <!-- Features principais -->
+        <div class="features">
+            <h3>Descubra Nosso Amor</h3>
+            <button class="feature-btn" onclick="showQuiz()">💝 Quiz do Casal</button>
+            <button class="feature-btn" onclick="showDateGenerator()">🎯 Gerador de Dates</button>
+            <button class="feature-btn" onclick="showMemories()">📸 Nossas Memórias</button>
+        </div>
+
+        <!-- Cards de 30 dias -->
+        <h3>30 Dias de Surpresas</h3>
+        <div class="daily-cards" id="dailyCards"></div>
+
+        <!-- Seções dinâmicas -->
+        <div class="quiz-container" id="quizContainer"></div>
+        <div class="date-generator" id="dateGenerator"></div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3 id="modalTitle">Título</h3>
+            <img id="modalImage" src="" alt="Memória">
+            <p id="modalText">Texto</p>
+            <button class="close-modal" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/daily-cards.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/date-generator.js"></script>
+</body>
+</html>
