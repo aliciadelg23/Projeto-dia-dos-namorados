@@ -1,0 +1,31 @@
+{
+    "couple": {
+        "person1": "João",
+        "person2": "Maria",
+        "startDate": "2024-01-01",
+        "specialDates": {
+            "firstKiss": "2024-01-15",
+            "firstTrip": "2024-06-10"
+        }
+    },
+    "memories": [
+        {
+            "day": 1,
+            "title": "Nosso Primeiro Encontro",
+            "description": "Foi no café da esquina...",
+            "photo": "first-date.jpg"
+        }
+    ],
+    "quizData": [
+        {
+            "question": "Qual minha cor favorita?",
+            "options": ["Azul", "Verde", "Rosa", "Preto"],
+            "correctAnswer": 2
+        }
+    ],
+    "dateIdeas": {
+        "romantic": ["Jantar à luz de velas", "Pôr do sol na praia"],
+        "adventure": ["Trilha na montanha", "Parque de diversões"],
+        "home": ["Maratona de séries", "Cozinhar juntos"]
+    }
+}
