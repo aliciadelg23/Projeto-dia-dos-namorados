@@ -46,16 +46,27 @@
         <h3>30 Dias de Surpresas</h3>
         <div class="daily-cards" id="dailyCards"></div>
 
-        <!-- Seções dinâmicas -->
-        <div class="quiz-container" id="quizContainer"></div>
-        <div class="date-generator" id="dateGenerator"></div>
+        <!-- Quiz Container -->
+        <div class="quiz-container" id="quizContainer">
+            <h3>Quiz do Nosso Amor</h3>
+            <div class="quiz-question" id="quizQuestion"></div>
+            <div id="quizOptions"></div>
+        </div>
+
+        <!-- Date Generator -->
+        <div class="date-generator" id="dateGenerator">
+            <h3>Gerador de Dates</h3>
+            <p>Clique para descobrir seu próximo date perfeito!</p>
+            <button class="feature-btn" onclick="generateDate()">🎲 Gerar Date</button>
+            <div class="date-suggestion" id="dateSuggestion"></div>
+        </div>
     </div>
 
     <!-- Modal -->
     <div class="modal" id="modal">
         <div class="modal-content">
             <h3 id="modalTitle">Título</h3>
-            <img id="modalImage" src="" alt="Memória">
+            <img id="modalImage" src="/api/placeholder/300/200" alt="Memória">
             <p id="modalText">Texto</p>
             <button class="close-modal" onclick="closeModal()">Fechar</button>
         </div>

@@ -3,29 +3,113 @@
         "person1": "João",
         "person2": "Maria",
         "startDate": "2024-01-01",
+        "anniversaryDate": "2024-01-01",
         "specialDates": {
             "firstKiss": "2024-01-15",
-            "firstTrip": "2024-06-10"
+            "firstTrip": "2024-06-10",
+            "proposal": "2024-12-25"
+        },
+        "preferences": {
+            "music": "MPB",
+            "food": "Italiana",
+            "travel": "Praia",
+            "movie": "Romance"
         }
     },
     "memories": [
         {
             "day": 1,
             "title": "Nosso Primeiro Encontro",
-            "description": "Foi no café da esquina...",
-            "photo": "first-date.jpg"
+            "description": "Foi no café da esquina, você estava linda com aquele vestido azul",
+            "photo": "first-date.jpg",
+            "emoji": "☕"
+        },
+        {
+            "day": 2,
+            "title": "Primeira Mensagem",
+            "description": "Ainda lembro do frio na barriga quando você respondeu",
+            "photo": "first-message.jpg",
+            "emoji": "💬"
+        },
+        {
+            "day": 3,
+            "title": "Primeiro Filme Juntos",
+            "description": "La La Land no cinema, chorei no final",
+            "photo": "first-movie.jpg",
+            "emoji": "🎬"
         }
     ],
     "quizData": [
         {
+            "id": 1,
             "question": "Qual minha cor favorita?",
             "options": ["Azul", "Verde", "Rosa", "Preto"],
-            "correctAnswer": 2
+            "correctAnswer": 2,
+            "explanation": "Rosa, desde criança!"
+        },
+        {
+            "id": 2,
+            "question": "Qual meu prato favorito?",
+            "options": ["Pizza", "Lasanha", "Sushi", "Hambúrguer"],
+            "correctAnswer": 1,
+            "explanation": "Lasanha da vovó, claro!"
+        },
+        {
+            "id": 3,
+            "question": "Onde foi nosso primeiro beijo?",
+            "options": ["No parque", "Na praia", "No cinema", "Na porta de casa"],
+            "correctAnswer": 0,
+            "explanation": "No parque, embaixo daquela árvore"
         }
     ],
     "dateIdeas": {
-        "romantic": ["Jantar à luz de velas", "Pôr do sol na praia"],
-        "adventure": ["Trilha na montanha", "Parque de diversões"],
-        "home": ["Maratona de séries", "Cozinhar juntos"]
-    }
+        "romantic": [
+            {
+                "title": "Jantar à luz de velas",
+                "description": "Preparar juntos um jantar especial",
+                "budget": "$",
+                "duration": "3h"
+            }
+        ],
+        "adventure": [
+            {
+                "title": "Trilha na montanha",
+                "description": "Explorar uma nova trilha com piquenique",
+                "budget": "$",
+                "duration": "5h"
+            }
+        ],
+        "home": [
+            {
+                "title": "Maratona de séries",
+                "description": "Um dia inteiro com nossas séries favoritas",
+                "budget": "$",
+                "duration": "Todo dia"
+            }
+        ]
+    },
+    "customMessages": {
+        "morning": [
+            "Bom dia, amor! Hoje é um dia especial porque estou com você",
+            "Acordei pensando em você e em como sou sortudo(a)"
+        ],
+        "night": [
+            "Boa noite, meu amor! Durma com os anjos",
+            "Que seus sonhos sejam tão doces quanto você"
+        ]
+    },
+    "milestones": [
+        {
+            "days": 30,
+            "message": "Um mês juntos! Nossa história está apenas começando"
+        },
+        {
+            "days": 100,
+            "message": "100 dias de puro amor! Cada dia mais apaixonado(a)"
+        },
+        {
+            "days": 365,
+            "message": "Um ano! 365 dias de felicidade ao seu lado"
+        }
+    ]
 }

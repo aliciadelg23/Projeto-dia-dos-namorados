@@ -124,6 +124,8 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 30px;
+    min-height: 400px;
+    padding: 10px;
 }
 
 .card {
@@ -236,4 +238,64 @@ h3 {
 .close-modal:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(255, 105, 180, 0.5);
+}
+
+.quiz-container {
+    display: none;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    border: 2px solid rgba(255, 182, 193, 0.5);
+}
+
+.quiz-question {
+    font-size: 1.3em;
+    color: #8B0020;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.quiz-option {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #FFF0F5;
+    border: 2px solid #FFB6C1;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    color: #8B0020;
+}
+
+.quiz-option:hover {
+    background: #FFB6C1;
+    border-color: #FF69B4;
+    transform: scale(1.02);
+}
+
+.date-generator {
+    display: none;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    border: 2px solid rgba(255, 182, 193, 0.5);
+}
+
+.date-suggestion {
+    font-size: 1.5em;
+    color: #C71585;
+    margin: 20px 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
 }

@@ -24,12 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Calcular dias
     calculateDays();
     
-    // Criar cards
+    // Criar cards diários
     createDailyCards();
     
     // Inicializar componentes
-    initializeQuiz();
-    initializeDateGenerator();
+    if (typeof initializeQuiz === 'function') {
+        initializeQuiz();
+    }
+    if (typeof initializeDateGenerator === 'function') {
+        initializeDateGenerator();
+    }
 });
 
 // Fechar modal ao clicar fora
@@ -43,4 +47,20 @@ window.onclick = function(event) {
 // Funções de modal
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+}
+
+// Funções globais que serão chamadas pelos botões
+function showQuiz() {
+    document.getElementById('quizContainer').style.display = 'block';
+    document.getElementById('dateGenerator').style.display = 'none';
+    loadQuizQuestion();
+}
+
+function showDateGenerator() {
+    document.getElementById('dateGenerator').style.display = 'block';
+    document.getElementById('quizContainer').style.display = 'none';
+}
+
+function showMemories() {
+    alert('Em breve: Galeria de fotos especiais! 📸');
 }
