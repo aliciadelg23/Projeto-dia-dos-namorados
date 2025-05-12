@@ -13,16 +13,16 @@ const dailyContent = [
         image: "https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=300&h=200&fit=crop"
     },
     {
-        day: 3,
+        bay: 3,
         title: "Nossas Conversas",
         text: "Horas passam como minutos quando estamos conversando. Você é minha pessoa favorita no mundo.",
-        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=200&fit=crop"
+        image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&h=200&fit=crop" // Casal conversando intimamente
     },
     {
         day: 4,
         title: "Primeiro Encontro",
         text: "Nervoso, ansioso, feliz... Todos os sentimentos misturados naquele dia especial.",
-        image: "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=300&h=200&fit=crop"
+        image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=300&h=200&fit=crop" // Casal abraçado romântico
     },
     {
         day: 5,
@@ -181,6 +181,14 @@ const dailyContent = [
         image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&h=200&fit=crop"
     }
 ];
+
+const alternativeImages = {
+    romantic: "https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?w=300&h=200&fit=crop",
+    hands: "https://images.pexels.com/photos/1004014/pexels-photo-1004014.jpeg?w=300&h=200&fit=crop",
+    couple: "https://images.pexels.com/photos/984950/pexels-photo-984950.jpeg?w=300&h=200&fit=crop",
+    sunset: "https://images.pexels.com/photos/1387174/pexels-photo-1387174.jpeg?w=300&h=200&fit=crop",
+    flowers: "https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?w=300&h=200&fit=crop"
+};
 
 // Criar cards diários
 function createDailyCards() {
