@@ -226,7 +226,7 @@ function createDailyCards() {
 
 // Abrir card
 function openCard(day) {
-    const content = dailyContent[(day - 1) % dailyContent.length];
+    const content = dailyContent.find(item => item.day === day) || dailyContent[0];
     document.getElementById('modalTitle').textContent = `Dia ${day}: ${content.title}`;
     document.getElementById('modalText').textContent = content.text;
     document.getElementById('modalImage').src = content.image;
