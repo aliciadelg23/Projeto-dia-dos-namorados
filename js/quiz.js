@@ -20,6 +20,12 @@ function showQuiz() {
     document.getElementById('quizContainer').style.display = 'block';
     document.getElementById('dateGenerator').style.display = 'none';
     loadQuizQuestion();
+    
+    // Scroll suave até o quiz
+    document.getElementById('quizContainer').scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+    });
 }
 
 // Carregar pergunta

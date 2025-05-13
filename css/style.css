@@ -299,3 +299,43 @@ h3 {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
 }
+
+/* Transição suave ao mostrar/esconder containers */
+#quizContainer,
+#dateGenerator {
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    scroll-margin-top: 100px; /* Espaço do topo ao fazer scroll */
+}
+
+/* Animação de entrada */
+#quizContainer:not([style*="display: none"]),
+#dateGenerator:not([style*="display: none"]) {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Destacar o container ativo */
+#quizContainer,
+#dateGenerator {
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.98);
+}
+
+#quizContainer:not([style*="display: none"]),
+#dateGenerator:not([style*="display: none"]) {
+    border-color: #FF69B4;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+}

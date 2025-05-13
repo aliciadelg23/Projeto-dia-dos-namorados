@@ -40,6 +40,24 @@ const dateIdeas = {
 // Array simples com todas as ideias
 const allDateIdeas = Object.values(dateIdeas).flat();
 
+// Função para mostrar o gerador de dates
+function showDateGenerator() {
+    const container = document.getElementById('dateGenerator');
+    container.style.display = 'block';
+    document.getElementById('quizContainer').style.display = 'none';
+    
+    // Inicializar o conteúdo
+    initializeDateGenerator();
+    
+    // Scroll suave até o gerador
+    setTimeout(() => {
+        container.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }, 100);
+}
+
 // Gerar date aleatório
 function generateDate() {
     const randomIndex = Math.floor(Math.random() * allDateIdeas.length);
@@ -118,3 +136,8 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Tornar funções globais
+window.showDateGenerator = showDateGenerator;
+window.generateDate = generateDate;
+window.generateDateByCategory = generateDateByCategory;
